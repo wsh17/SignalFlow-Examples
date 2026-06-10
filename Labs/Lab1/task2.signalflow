@@ -1,0 +1,11 @@
+Identify the change that was made in the SignalFlow to hide the plot:
+To hide the plot, look in the publish() method; enable=True was changed to enable=False.
+To hide the plot for "demo.trans.count" and to show the plot for "demo.trans.latency"
+.:
+A = data('demo.trans.count').publish(label='A', enable=False)
+B = data('demo.trans.latency').publish(label='B', enable=True)
+Show both plots and change plot name :
+A = data('demo.trans.count').publish(label='Trans Count', enable=True)
+B = data('demo.trans.latency').publish(label='Latency', enable=True)
+
+
