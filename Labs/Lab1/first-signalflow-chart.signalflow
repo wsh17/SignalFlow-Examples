@@ -1,0 +1,2 @@
+B = data('demo.trans.latency').publish(label='B')
+A = data('demo.trans.count').publish(label='A')
